@@ -6,9 +6,9 @@
 }
 :root {
  --primary-color: #e9a6f8;
- --secondary-color: #c290e9;
+ --secondary-color: #421a50;
  --light-color: #0c0c0c;
- --dark-color: #babdba;
+ --dark-color: #ffffff;
  
  }
  body {
@@ -16,12 +16,20 @@
  color: #070707;
  line-height: 1.6;
  }
-  container {
- width:99%;
- max-width: 1200px;
- margin: 0 auto;
- padding: 20px;
+ header {height: 70px;
+    color: #050505;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom:20px
 }
+header.active {
+    background: #000000;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  
 .navbar {
  display: flex;
  justify-content: center;
@@ -33,7 +41,7 @@
  backdrop-filter: blur(10px);
 }
 .navbar a {
- color: rgb(12, 12, 12);
+ color: #3e0242;
  text-decoration: none;
  padding: 0.8rem 1.5rem;
  margin: 0 0.5rem;
@@ -57,34 +65,25 @@ transform: translateY(-3px);
  background-color: var(--accent-color);
  transition: width 0.3s ease;
  }
- .profile-section {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-wrap: wrap;
- gap: 3rem;
- padding: 2rem;
- }
- .profile-info {
-    
- max-width: 600px;
- text-align: right;
- }
-
- .profile-info h1 {
- font-size: 2.5rem;
- margin-bottom: 1rem;
- color: rgb(13, 13, 13);
- }
- .profile-info p {
- font-size: 1.2rem;
- line-height: 1.8;
- color: var(--light-color);
- }
+ 
+ 
  /* القسم الرئيسي */
  main {
+
  padding: 2rem 0;
  }
+ .courses{
+     height: 90px;
+    list-style-type: none;
+    padding: 0;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #570874;
+   font-size:20px;
+ }
+ 
 section {
 margin-bottom: 4rem;
  padding: 2.5rem;
@@ -105,6 +104,13 @@ section h2 {
  position: relative;
  font-size: 2rem;
  }
+ 
+ 
+
+
+.social-media {
+    margin-top: 20px;
+}
  .skill-item {
  margin-bottom: 1.2rem;
  }
@@ -118,7 +124,7 @@ section h2 {
 
  .skill-bar {
  height: 10px;
- background-color: #e0e0e0;
+ background-color: #b945df;
  border-radius: 5px;
  overflow: hidden;
  }
@@ -128,6 +134,35 @@ section h2 {
  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
  border-radius: 5px;
  }
+ 
+    .section {
+      margin-bottom: 2rem;
+    }
+    ul {
+    justify-content: space-between;
+  
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+ul li a {
+    background: #5e0a5e;
+    color: #fff;
+
+    padding: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    /* transition: background 0.3s; */
+}
+ul li a:hover {
+    background:#833a7a;
+}
+    /*القسم النهائي*/
  footer {
 
  background: linear-gradient(to right, var(--secondary-color), var(--dark-color));
@@ -136,6 +171,62 @@ section h2 {
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
  }
+ h3{ color: #421a50}
+.social-media {
+    margin-top: 20px;
+}
+.social-media a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #591971;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Added transform transition */
+}
+    .social-media a:hover {
+    color: #9a3abd;
+    transform: scale(1.1); 
+}
+.social-media i {
+    margin-right: 5px;
+}
+
+ 
+ .container{padding: 10px;
+font-size: 18px;
+border-bottom: 1px solid #351a4c;}
+
+.testimonial {
+    padding-bottom: 40px;
+  margin: 20px auto;
+  max-width: 600px;
+    font-weight: bold;
+  font-style: italic;
+}
+ .btn-download {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: rgba(209, 125, 232, 0.814);
+  color: rgb(80, 5, 95);
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.scroll-top-btn{
+  
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+     background-color: #d35df0;
+    color: rgb(80, 5, 95);
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#resume h2{
+    color: #421a50;
+}
  .contact-info h3, .social-media h3 {
      
  font-size: 1.8rem;
