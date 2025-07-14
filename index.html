@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
+  <input type="checkbox" id="toggle" class="toggle-input">
+ 
+ <label for="toggle" class="toggle-label"></label>
+
  <div class="container">
+
+   <header>
+ <div class="container1">
  <nav class="navbar">
+    <i class="fas fa-bars toggle-menu"></i>
    <a href="#Bio">Bio </a> 
  <a href="#courses">courses </a>
  <a href="#skills">skills</a>
  <a href="#contact">Contact</a>
  </nav>
- <section id="Bio">
+ </hedader>
+ <section id="bio"class="bio" >
    <img src="2.jpg" alt="الصوره الشخصيه">
    <h2>Hello, I'm Wiam AL_ Klaele</h2>
     <p>I'm a passionate web developer eager to build clean and user-friendly websites.</p>
  </section>
- 
+
   <!-- القسم الرئيسي -->
- <main class="container">
+ <main class="container1">
 
  <!-- قسم الدورات-->
   <section id="courses">
@@ -35,13 +44,10 @@
 <li>photoshop</li>
 <li> Einglish</li>
   </ul>
-</section>  
-</div>
 </section>
-
  </div>
  </section>
- <!-- قسم المهارات -->
+<!-- قسم المهارات -->
  <section id="skills">
  <h2>skills</h2>
  
@@ -53,7 +59,6 @@
  <div class="skill-bar">
  <div class="skill-level" style="width: 95%"></div>
  </div>
- </div>
  <div class="skill-item">
  <div class="skill-name">
  <span>JavaScript</span>
@@ -61,7 +66,6 @@
  </div>
  <div class="skill-bar">
  <div class="skill-level" style="width: 90%"></div>
- </div>
  </div>
  <div class="skill-item">
  <div class="skill-name">
@@ -71,7 +75,6 @@
  <div class="skill-bar">
  <div class="skill-level" style="width: 85%"></div>
  </div>
- </div>
  <div class="skill-item">
  <div class="skill-name">
  <span>php</span>
@@ -79,14 +82,13 @@
  </div>
  <div class="skill-bar">
  <div class="skill-level" style="width: 50%"></div>
- 
  </section>
-
-</section>
+ </section>
 <section id="resume">
  
   <h2>Download My Resume</h2>
   <a href="wiam-c.v.pdf" class="btn-download" download>Download CV</a>
+   <input type="file" class="btn-download" accept=".pdf,.doc,.docx">
 </section>
  </main>
  <a href="#top" class="scroll-top-btn">&#8593</a>
@@ -94,7 +96,7 @@
   
   <footer >
     <section id="contact" >
-    <center>
+    <p>Contact me at: engwiamraghe@gmail.com</p>
         <div>
            
                 <div class="social-media">
@@ -106,8 +108,9 @@
        
          
         </div>
-    </center>
   </footer>
 </section>
+
+ </div>
 </body>
 </html>
