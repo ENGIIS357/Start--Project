@@ -5,7 +5,7 @@
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root {
- --primary-color: #e9a6f8;
+ --primary-color: #e4dee5;
  --secondary-color: #421a50;
  --light-color: #0c0c0c;
  --dark-color: #ffffff;
@@ -13,7 +13,7 @@
  
  }
  body {
- background: linear-gradient(135deg, #c77fce 0%, #896b96 100%);
+ background: linear-gradient(135deg, #98829a 0%, #ddcfe3 100%);
  color: #070707;
  line-height: 1.6;
  }
